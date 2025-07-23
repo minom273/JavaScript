@@ -1,0 +1,153 @@
+/* 全体的な設定 */
+body {
+    font-family: 'Segoe UI', 'BIZ UDPGothic', 'メイリオ', Meiryo, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+}
+
+/* ヘッダー */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 15px;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 5px solid #3498db;
+}
+
+h3 {
+    color: #2980b9;
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #9bc6e8;
+    padding-bottom: 5px;
+}
+
+/* 段落 */
+p {
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+strong {
+    color: #e74c3c;
+}
+
+/* リスト */
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 25px;
+    background-color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+ul li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* 定義リスト */
+dl {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 3px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* コードブロック */
+pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+code {
+    font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+    background-color: #e0e0e0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #c0392b;
+}
+
+pre code {
+    background-color: transparent;
+    color: #f8f8f2;
+    padding: 0;
+}
+
+/* リンク */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* 特定の要素の調整 */
+/* ulの中にh3が入っているHTML構造に対する修正 */
+ul h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    border-bottom: none;
+    color: #2980b9; /* 他のh3と同じ色に */
+}
+
+/* ul liの中にdlがある場合の調整 */
+ul li dl {
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color: #f7f9fa; /* 親のリストの背景色とは異なる色で区別 */
+    border: 1px solid #e0e6ea;
+}

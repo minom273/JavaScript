@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <h1>JavaScriptフレームワーク</h1>
+
+    <div class="table-of-contents">
+        <h2>目次</h2>
+        <ul>
+            <li><a href="#framework-library">JavaScriptフレームワーク・ライブラリとは</a></li>
+            <li><a href="#main-framework-library">主要なフレームワーク・ライブラリ</a></li>
+            <li><a href="#introduction-methods">簡単な導入方法</a></li>
+            <li><a href="#selection-hints">選定のヒント</a></li>
+            <li><a href="#creation-time">本コンテンツの作成時間</a></li>
+        </ul>
+    </div>
+
+    <h2 id="framework-library">JavaScriptフレームワーク・ライブラリとは</h2>
+    <p>JavaScriptフレームワーク・ライブラリは、<strong>Webサイトやアプリケーションの開発を効率化するためのツール</strong>です。<br>
+    これらは、JavaScriptのコードを簡潔に書くことができ、開発の生産性を向上させるために設計されています。<br>
+    フレームワークは特定の構造や規約に従ってアプリケーションを構築するための枠組みを提供し、ライブラリは特定の機能を実装するための再利用可能なコードの集まりです。</p>
+    <h2 id="main-framework-library">主要なフレームワーク・ライブラリ</h2>
+    <p>それぞれのフレームワーク・ライブラリには特徴や得意な用途があります。<br>
+    以下に代表的なものを紹介します。</p>
+    <ul>
+        <li>
+            <h3>React</h3>
+            <dl>
+                <dt>特徴</dt>
+                <dd><strong>Meta社</strong>が開発。UI構築に特化したライブラリ。<br>コンポーネント指向で仮想DOMを利用。宣言的なUI記述が特徴</dd>
+                <dt>強み</dt>
+                <dd>大規模なシングルアプリケーションの開発、豊富なコミュニティ</dd>
+                <dt>弱点</dt>
+                <dd>ルーティングなどが別途必要。<br>環境の構築や学習に手間がかかる。</dd>
+                <dt>向いているプロジェクト</dt>
+                <dd>大規模なシングルページアプリケーション、動的なUIが必要なプロジェクト</dd>
+            </dl>
+        </li>
+        <li>
+            <h3>Vue.js</h3>
+            <dl>
+                <dt>特徴</dt>
+                <dd><strong>Evan You氏</strong>が開発。<br>覚えやすい記法と高い柔軟性が魅力であり、徐々に導入可能。</dd>
+                <dt>強み</dt>
+                <dd>学習コストが低い。日本語ドキュメントが充実している。パフォーマンスが良い。</dd>
+                <dt>弱点</dt>
+                <dd>大規模な開発事例はReactに劣る。豊富なコミュニティの意図はやや限定的。</dd>
+                <dt>向いているプロジェクト</dt>
+                <dd>中小規模のプロジェクト、段階的に導入したいプロジェクト</dd>
+            </dl>
+        </li>
+        <li>
+            <h3>Angular</h3>
+            <dl>
+                <dt>特徴</dt>
+                <dd><strong>Google社</strong>が開発。<br>TypeScriptを標準採用しており、AngularJSの後継となっているが全く別のフレームワーク。</dd>
+                <dt>強み</dt>
+                <dd>大規模エンタープライズ開発に強い。規約が明確で統一された開発が可能。</dd>
+                <dt>弱点</dt>
+                <dd>頻繁に更新が行われそれによる機能変更の可能性がある。<br>学習すべき項目が多く、学習コストが高い。</dd>
+                <dt>向いているプロジェクト</dt>
+                <dd>大規模なエンタープライズアプリケーション、長期的なメンテナンスが必要なプロジェクト</dd>
+            </dl>
+        </li>
+    </ul>
+    <h2 id="introduction-methods">簡単な導入方法</h2>
+    <p>ここでは、先ほどのフレームワーク・ライブラリについて簡単な導入方法を紹介します。</p>
+    <h3>Node.jsとnpmのインストール</h3>
+    <p>JavaScriptフレームワークを使用するためには、Node.jsとnpm（Node Package Manager）が必要です。<br>
+    これらはJavaScriptの実行環境とパッケージ管理ツールです。<br>
+    <a href="https://nodejs.org/en">Node.jsの公式サイト</a>からインストーラーをダウンロードし、インストールを行ってください。</p>
+    <h3>Reactの導入</h3>
+    <p>Reactを導入するには、以下の手順を実行します。</p>
+    <ol>
+        <li>Node.jsとnpmをインストールします。</li>
+        <li>以下のコマンドでReactアプリケーションを作成します。</li>
+    </ol>
+    <pre><code>npx create-react-app my-app</code></pre>
+    <p>3. 作成したディレクトリに移動し、以下のコマンドで開発サーバーを起動します。</p>
+    <pre><code>cd my-app
+npm start
+</code></pre>
+    <h3>Vue.jsの導入</h3>
+    <p>Vue.jsを導入するには、以下の手順を実行します。</p>
+    <ol>
+        <li>Node.jsとnpmをインストールします。</li>
+        <li>以下のコマンドでVue CLIをインストールします。</li>
+    </ol>
+    <pre><code>npm install -g @vue/cli</code></pre>
+    <p>3. Vueプロジェクトを作成します。</p>
+    <pre><code>vue create my-project</code></pre>
+    <p>4. 作成したディレクトリに移動し、以下のコマンドで開発サーバーを起動します。</p>
+    <pre><code>cd my-project
+npm run serve
+</code></pre>
+    <h3>Angularの導入</h3>
+    <p>Angularを導入するには、以下の手順を実行します。</p>
+    <ol>
+        <li>Node.jsとnpmをインストールします。</li>
+        <li>以下のコマンドでAngular CLIをインストールします。</li>
+    </ol>
+    <pre><code>npm install -g @angular/cli</code></pre>
+    <p>3. Angularプロジェクトを作成します。</p>
+    <pre><code>ng new my-angular-app</code></pre>
+    <p>4. 作成したディレクトリに移動し、以下のコマンドで開発サーバーを起動します。</p>
+    <pre><code>cd my-angular-app
+npm start
+</code></pre>
+    <h2 id="selection-hints">選定のヒント</h2>
+    <p>フレームワークやライブラリを選定する際は、以下のポイントを考慮してください。</p>
+    <ul>
+        <li>プロジェクトの要件に合った機能を持っているか</li>
+        <li>コミュニティの活発さやドキュメントの充実度</li>
+        <li>学習コストや導入の容易さ</li>
+    </ul>
+    <p>どれがいいかはプロジェクトの要件やチームのスキルセットによります。そのためまずは一つ試してみて、実際に触れてみることが大切です。</p>
+    <h2 id="creation-time">本コンテンツの作成時間</h2>
+    <p>XX時間</p>
+</body>
+</html>
